@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Babel Technology Group — Experienced, Personalized IT Consulting</title>
+    <meta name="description" content="Babel Technology Group provides AI-driven CMMC compliance, cybersecurity consulting, and IT infrastructure services for the Defense Industrial Base. 20+ years DoD & IC experience.">
+    <meta name="keywords" content="CMMC, NIST 800-171, cybersecurity, DoD, defense contractor, IT consulting, Babel Bastion, compliance">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Babel Technology Group">
+    <meta property="og:description" content="AI-Driven CMMC Compliance & IT Consulting for the Defense Industrial Base">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://babeltechnologygroup.com">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        bastion: {
+                            50: '#f0f5fa',
+                            100: '#dae6f2',
+                            200: '#b8d0e8',
+                            300: '#699BCF',
+                            400: '#5a89b8',
+                            500: '#4a77a1',
+                            600: '#3d6288',
+                            700: '#334f6e',
+                            800: '#2a3d55',
+                            900: '#1a2740',
+                            950: '#0d1520',
+                        },
+                    },
+                    fontFamily: {
+                        sans: ['Lato', 'sans-serif'],
+                        heading: ['Cabin', 'sans-serif'],
+                    },
+                },
+            },
+        }
+    </script>
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-bastion-950 text-gray-100 font-sans antialiased">
+
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed top-0 w-full z-50 transition-all duration-300 bg-bastion-950/80 backdrop-blur-lg border-b border-bastion-800/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <!-- Logo -->
+                <a href="index.html" class="flex items-center gap-3">
+                    <div class="w-8 h-8 bg-bastion-300 rounded-lg flex items-center justify-center">
+                        <i data-lucide="shield" class="w-5 h-5 text-white"></i>
+                    </div>
+                    <span class="text-lg font-heading font-bold text-white">Babel Technology Group</span>
+                </a>
+
+                <!-- Desktop Nav -->
+                <div class="hidden md:flex items-center gap-8">
+                    <a href="index.html" class="text-sm text-gray-300 hover:text-bastion-300 transition-colors">Home</a>
+                    <a href="#services" class="text-sm text-gray-300 hover:text-bastion-300 transition-colors">Services</a>
+                    <a href="bastion.html" class="text-sm text-bastion-300 font-semibold hover:text-bastion-200 transition-colors">Babel Bastion</a>
+                    <a href="leadership.html" class="text-sm text-gray-300 hover:text-bastion-300 transition-colors">Leadership</a>
+                    <a href="#contact" class="bg-bastion-300 hover:bg-bastion-400 text-white font-semibold py-2 px-4 rounded-lg text-sm transition-colors">Contact Us</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden p-2 text-gray-400 hover:text-white">
+                    <i data-lucide="menu" class="w-6 h-6"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-bastion-900 border-t border-bastion-800">
+            <div class="px-4 py-3 space-y-2">
+                <a href="index.html" class="block py-2 text-gray-300 hover:text-bastion-300">Home</a>
+                <a href="#services" class="block py-2 text-gray-300 hover:text-bastion-300">Services</a>
+                <a href="bastion.html" class="block py-2 text-bastion-300 font-semibold">Babel Bastion</a>
+                <a href="leadership.html" class="block py-2 text-gray-300 hover:text-bastion-300">Leadership</a>
+                <a href="#contact" class="block py-2 text-gray-300 hover:text-bastion-300">Contact Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-screen flex items-center justify-center pt-16">
+        <!-- Background gradient -->
+        <div class="absolute inset-0 bg-gradient-to-b from-bastion-950 via-bastion-900/50 to-bastion-950"></div>
+        <div class="absolute inset-0 opacity-10" style="background-image: radial-gradient(circle at 25% 50%, #699BCF 0%, transparent 50%), radial-gradient(circle at 75% 50%, #699BCF 0%, transparent 50%);"></div>
+
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="inline-flex items-center gap-2 bg-bastion-800/50 border border-bastion-700 rounded-full px-4 py-1.5 mb-8">
+                <span class="w-2 h-2 bg-green-400 rounded-full animate-pulse"></span>
+                <span class="text-sm text-gray-300">Now Introducing <strong class="text-bastion-300">Babel Bastion</strong> — AI-Driven CMMC Compliance</span>
+            </div>
+
+            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-heading font-bold text-white leading-tight">
+                Experienced, Personalized<br>
+                <span class="text-bastion-300">IT Consulting</span>
+            </h1>
+
+            <p class="mt-6 text-xl text-gray-400 max-w-3xl mx-auto">
+                Let us build the infrastructure for your success. Over 20 years of service in the
+                Department of Defense and Intelligence Community — now helping the DIB achieve
+                CMMC compliance with AI-powered solutions.
+            </p>
+
+            <div class="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
+                <a href="bastion.html" class="bg-bastion-300 hover:bg-bastion-400 text-white font-bold py-3 px-8 rounded-lg text-lg transition-colors inline-flex items-center gap-2">
+                    <i data-lucide="shield" class="w-5 h-5"></i>
+                    Explore Babel Bastion
+                </a>
+                <a href="#contact" class="bg-bastion-800 hover:bg-bastion-700 text-gray-200 font-semibold py-3 px-8 rounded-lg text-lg border border-bastion-600 transition-colors">
+                    Talk to Us
+                </a>
+            </div>
+
+            <!-- Stats -->
+            <div class="mt-20 grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div>
+                    <p class="text-3xl font-bold text-bastion-300">20+</p>
+                    <p class="text-sm text-gray-500 mt-1">Years of Service</p>
+                </div>
+                <div>
+                    <p class="text-3xl font-bold text-bastion-300">DoD</p>
+                    <p class="text-sm text-gray-500 mt-1">& Intelligence Community</p>
+                </div>
+                <div>
+                    <p class="text-3xl font-bold text-bastion-300">110</p>
+                    <p class="text-sm text-gray-500 mt-1">NIST 800-171 Controls</p>
+                </div>
+                <div>
+                    <p class="text-3xl font-bold text-bastion-300">AI</p>
+                    <p class="text-sm text-gray-500 mt-1">Driven Compliance</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scroll indicator -->
+        <div class="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
+            <i data-lucide="chevron-down" class="w-6 h-6 text-gray-600"></i>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="py-24 bg-bastion-900/30">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+                <div>
+                    <h2 class="text-3xl font-heading font-bold text-white">
+                        We Speak the Language of IT
+                    </h2>
+                    <p class="mt-6 text-gray-400 leading-relaxed">
+                        Our team is ready to assist you with your IT needs. We understand that when you need
+                        to focus on your mission, managing IT challenges shouldn't stand in the way. With over
+                        two decades of hands-on experience in the Department of Defense and Intelligence Community,
+                        we bring battle-tested expertise to every engagement.
+                    </p>
+                    <p class="mt-4 text-gray-400 leading-relaxed">
+                        Our ramp-up process is designed to empower your technical team — not replace them.
+                        We identify gaps, create actionable plans with timelines and milestones, and guide
+                        your organization to sustainable compliance and operational excellence.
+                    </p>
+
+                    <div class="mt-8 grid grid-cols-2 gap-4">
+                        <div class="flex items-center gap-2">
+                            <i data-lucide="check-circle" class="w-5 h-5 text-bastion-300"></i>
+                            <span class="text-sm text-gray-300">DevOps & SecDevOps</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <i data-lucide="check-circle" class="w-5 h-5 text-bastion-300"></i>
+                            <span class="text-sm text-gray-300">Risk Management Framework</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <i data-lucide="check-circle" class="w-5 h-5 text-bastion-300"></i>
+                            <span class="text-sm text-gray-300">Open-Source Technologies</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <i data-lucide="check-circle" class="w-5 h-5 text-bastion-300"></i>
+                            <span class="text-sm text-gray-300">Cloud-Based Development</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <i data-lucide="check-circle" class="w-5 h-5 text-bastion-300"></i>
+                            <span class="text-sm text-gray-300">End-to-End Integration</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <i data-lucide="check-circle" class="w-5 h-5 text-bastion-300"></i>
+                            <span class="text-sm text-gray-300">Networks & Systems Security</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Visual element -->
+                <div class="relative">
+                    <div class="bg-bastion-900 border border-bastion-800 rounded-2xl p-8">
+                        <div class="text-center">
+                            <div class="w-20 h-20 bg-bastion-300/10 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                                <i data-lucide="building-2" class="w-10 h-10 text-bastion-300"></i>
+                            </div>
+                            <h3 class="text-xl font-heading font-bold text-white">Agency Experience</h3>
+                            <p class="text-gray-400 mt-2 text-sm">Trusted by the organizations that matter most</p>
+                        </div>
+                        <div class="mt-8 space-y-3">
+                            <div class="flex items-center gap-3 bg-bastion-950 rounded-lg p-3">
+                                <i data-lucide="shield" class="w-5 h-5 text-bastion-300"></i>
+                                <span class="text-gray-300 text-sm">Defense Intelligence Agency</span>
+                            </div>
+                            <div class="flex items-center gap-3 bg-bastion-950 rounded-lg p-3">
+                                <i data-lucide="search" class="w-5 h-5 text-bastion-300"></i>
+                                <span class="text-gray-300 text-sm">National Media Exploitation Center</span>
+                            </div>
+                            <div class="flex items-center gap-3 bg-bastion-950 rounded-lg p-3">
+                                <i data-lucide="star" class="w-5 h-5 text-bastion-300"></i>
+                                <span class="text-gray-300 text-sm">Army, Air Force, Navy & Marines</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-heading font-bold text-white">Our Services</h2>
+                <p class="mt-4 text-gray-400 max-w-2xl mx-auto">
+                    Comprehensive IT consulting and cybersecurity services tailored for the Defense Industrial Base
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Babel Bastion - Featured -->
+                <div class="lg:col-span-3 bg-gradient-to-r from-bastion-300/10 to-bastion-900 border border-bastion-300/30 rounded-2xl p-8 relative overflow-hidden">
+                    <div class="absolute top-4 right-4 bg-bastion-300 text-white text-xs font-bold px-3 py-1 rounded-full">NEW</div>
+                    <div class="flex flex-col md:flex-row items-start gap-8">
+                        <div class="w-16 h-16 bg-bastion-300/20 rounded-2xl flex items-center justify-center flex-shrink-0">
+                            <i data-lucide="castle" class="w-8 h-8 text-bastion-300"></i>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="text-2xl font-heading font-bold text-white">Babel Bastion — AI-Driven CMMC Compliance</h3>
+                            <p class="mt-3 text-gray-400 leading-relaxed">
+                                Our flagship product. An AI-powered platform that guides Defense Industrial Base companies
+                                from zero to CMMC certified. Features AI chat grounded in NIST 800-171, automated SSP generation,
+                                SPRS score calculation, gap analysis, mock C3PAO assessments, and continuous compliance monitoring.
+                                Self-hosted with local AI — your data never leaves your network.
+                            </p>
+                            <a href="bastion.html" class="inline-flex items-center gap-2 mt-4 text-bastion-300 hover:text-bastion-200 font-semibold transition-colors">
+                                Learn More <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service Cards -->
+                <div class="bg-bastion-900 border border-bastion-800 rounded-xl p-6 hover:border-bastion-700 transition-colors">
+                    <div class="w-12 h-12 bg-bastion-800 rounded-xl flex items-center justify-center mb-4">
+                        <i data-lucide="shield-check" class="w-6 h-6 text-bastion-300"></i>
+                    </div>
+                    <h3 class="text-lg font-heading font-semibold text-white">Risk Management Framework</h3>
+                    <p class="mt-2 text-sm text-gray-400">RMF adoption, ATO preparation, continuous monitoring, and NIST compliance across your entire system portfolio.</p>
+                </div>
+
+                <div class="bg-bastion-900 border border-bastion-800 rounded-xl p-6 hover:border-bastion-700 transition-colors">
+                    <div class="w-12 h-12 bg-bastion-800 rounded-xl flex items-center justify-center mb-4">
+                        <i data-lucide="cloud" class="w-6 h-6 text-bastion-300"></i>
+                    </div>
+                    <h3 class="text-lg font-heading font-semibold text-white">Cloud Planning & Migration</h3>
+                    <p class="mt-2 text-sm text-gray-400">Strategic cloud migration to AWS, Azure, and GCC High environments with security-first architecture.</p>
+                </div>
+
+                <div class="bg-bastion-900 border border-bastion-800 rounded-xl p-6 hover:border-bastion-700 transition-colors">
+                    <div class="w-12 h-12 bg-bastion-800 rounded-xl flex items-center justify-center mb-4">
+                        <i data-lucide="settings" class="w-6 h-6 text-bastion-300"></i>
+                    </div>
+                    <h3 class="text-lg font-heading font-semibold text-white">System Engineering & Integration</h3>
+                    <p class="mt-2 text-sm text-gray-400">End-to-end system engineering, integration, and architecture design for complex defense environments.</p>
+                </div>
+
+                <div class="bg-bastion-900 border border-bastion-800 rounded-xl p-6 hover:border-bastion-700 transition-colors">
+                    <div class="w-12 h-12 bg-bastion-800 rounded-xl flex items-center justify-center mb-4">
+                        <i data-lucide="wrench" class="w-6 h-6 text-bastion-300"></i>
+                    </div>
+                    <h3 class="text-lg font-heading font-semibold text-white">Operations & Maintenance</h3>
+                    <p class="mt-2 text-sm text-gray-400">Process improvement, operational efficiency, and lifecycle maintenance for mission-critical systems.</p>
+                </div>
+
+                <div class="bg-bastion-900 border border-bastion-800 rounded-xl p-6 hover:border-bastion-700 transition-colors">
+                    <div class="w-12 h-12 bg-bastion-800 rounded-xl flex items-center justify-center mb-4">
+                        <i data-lucide="server" class="w-6 h-6 text-bastion-300"></i>
+                    </div>
+                    <h3 class="text-lg font-heading font-semibold text-white">On-Premise Virtualization</h3>
+                    <p class="mt-2 text-sm text-gray-400">Architecture, design, and implementation of on-premise virtualization infrastructure for secure environments.</p>
+                </div>
+
+                <div class="bg-bastion-900 border border-bastion-800 rounded-xl p-6 hover:border-bastion-700 transition-colors">
+                    <div class="w-12 h-12 bg-bastion-800 rounded-xl flex items-center justify-center mb-4">
+                        <i data-lucide="refresh-cw" class="w-6 h-6 text-bastion-300"></i>
+                    </div>
+                    <h3 class="text-lg font-heading font-semibold text-white">Disaster Recovery & COOP</h3>
+                    <p class="mt-2 text-sm text-gray-400">Continuity of operations planning, disaster recovery design, and business resilience strategies.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Us Section -->
+    <section class="py-24 bg-bastion-900/30">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl mx-auto text-center">
+                <h2 class="text-3xl font-heading font-bold text-white">Why Babel Technology Group?</h2>
+                <p class="mt-6 text-lg text-gray-400 leading-relaxed">
+                    Business mentors are key — that's why when it comes to client selection, we're choosy.
+                    We want to give each of you the time and guidance you deserve. Every company needs support,
+                    connectivity, and security. However, the specific needs of your company are unique to you.
+                </p>
+            </div>
+
+            <div class="mt-16 grid md:grid-cols-3 gap-8">
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-bastion-300/10 rounded-2xl flex items-center justify-center mx-auto">
+                        <i data-lucide="target" class="w-8 h-8 text-bastion-300"></i>
+                    </div>
+                    <h3 class="mt-4 text-lg font-heading font-semibold text-white">Personalized Approach</h3>
+                    <p class="mt-2 text-sm text-gray-400">We identify your specific gaps, create project plans with timelines and milestones, and deliver actionable cost analysis.</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-bastion-300/10 rounded-2xl flex items-center justify-center mx-auto">
+                        <i data-lucide="brain" class="w-8 h-8 text-bastion-300"></i>
+                    </div>
+                    <h3 class="mt-4 text-lg font-heading font-semibold text-white">AI-Powered Solutions</h3>
+                    <p class="mt-2 text-sm text-gray-400">Babel Bastion brings artificial intelligence to CMMC compliance — automating what used to take months of manual effort.</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-bastion-300/10 rounded-2xl flex items-center justify-center mx-auto">
+                        <i data-lucide="award" class="w-8 h-8 text-bastion-300"></i>
+                    </div>
+                    <h3 class="mt-4 text-lg font-heading font-semibold text-white">Proven Experience</h3>
+                    <p class="mt-2 text-sm text-gray-400">20+ years across DIA, NMEC, and all military branches. We've been in the trenches and know what assessors look for.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-16">
+                <div>
+                    <h2 class="text-3xl font-heading font-bold text-white">Let's Talk About Your IT Needs</h2>
+                    <p class="mt-4 text-gray-400 leading-relaxed">
+                        Every company needs support, connectivity, and security. However, the specific needs
+                        of your company are unique to you. Send us a message, and we can help you find the
+                        services that best fit your needs.
+                    </p>
+
+                    <div class="mt-8 space-y-4">
+                        <div class="flex items-center gap-3">
+                            <i data-lucide="mail" class="w-5 h-5 text-bastion-300"></i>
+                            <a href="mailto:pberrigan@babeltechnologygroup.com" class="text-gray-300 hover:text-bastion-300 transition-colors">
+                                pberrigan@babeltechnologygroup.com
+                            </a>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <i data-lucide="map-pin" class="w-5 h-5 text-bastion-300"></i>
+                            <span class="text-gray-300">Centreville, Virginia</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-bastion-900 border border-bastion-800 rounded-2xl p-8">
+                    <form action="https://formspree.io/f/placeholder" method="POST" class="space-y-4">
+                        <div>
+                            <label class="block text-sm text-gray-400 mb-1">Name</label>
+                            <input type="text" name="name" required
+                                class="w-full px-4 py-2.5 bg-bastion-950 border border-bastion-800 rounded-lg text-gray-200 placeholder-gray-600 focus:outline-none focus:border-bastion-300">
+                        </div>
+                        <div>
+                            <label class="block text-sm text-gray-400 mb-1">Email</label>
+                            <input type="email" name="email" required
+                                class="w-full px-4 py-2.5 bg-bastion-950 border border-bastion-800 rounded-lg text-gray-200 placeholder-gray-600 focus:outline-none focus:border-bastion-300">
+                        </div>
+                        <div>
+                            <label class="block text-sm text-gray-400 mb-1">Company</label>
+                            <input type="text" name="company"
+                                class="w-full px-4 py-2.5 bg-bastion-950 border border-bastion-800 rounded-lg text-gray-200 placeholder-gray-600 focus:outline-none focus:border-bastion-300">
+                        </div>
+                        <div>
+                            <label class="block text-sm text-gray-400 mb-1">Message</label>
+                            <textarea name="message" rows="4" required
+                                class="w-full px-4 py-2.5 bg-bastion-950 border border-bastion-800 rounded-lg text-gray-200 placeholder-gray-600 focus:outline-none focus:border-bastion-300 resize-none"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-bastion-300 hover:bg-bastion-400 text-white font-semibold py-3 px-6 rounded-lg transition-colors">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-bastion-900 border-t border-bastion-800 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-8 h-8 bg-bastion-300 rounded-lg flex items-center justify-center">
+                            <i data-lucide="shield" class="w-5 h-5 text-white"></i>
+                        </div>
+                        <span class="text-lg font-heading font-bold text-white">Babel Technology Group</span>
+                    </div>
+                    <p class="text-sm text-gray-500">Let us build the infrastructure for your success.</p>
+                </div>
+                <div>
+                    <h4 class="text-sm font-semibold text-gray-300 uppercase tracking-wider mb-3">Navigation</h4>
+                    <div class="space-y-2">
+                        <a href="index.html" class="block text-sm text-gray-500 hover:text-bastion-300 transition-colors">Home</a>
+                        <a href="bastion.html" class="block text-sm text-gray-500 hover:text-bastion-300 transition-colors">Babel Bastion</a>
+                        <a href="leadership.html" class="block text-sm text-gray-500 hover:text-bastion-300 transition-colors">Leadership</a>
+                        <a href="#contact" class="block text-sm text-gray-500 hover:text-bastion-300 transition-colors">Contact</a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-sm font-semibold text-gray-300 uppercase tracking-wider mb-3">Products</h4>
+                    <div class="space-y-2">
+                        <a href="bastion.html" class="block text-sm text-gray-500 hover:text-bastion-300 transition-colors">Babel Bastion</a>
+                        <span class="block text-sm text-gray-600">CMMC Consulting</span>
+                        <span class="block text-sm text-gray-600">RMF Advisory</span>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-8 pt-8 border-t border-bastion-800 text-center">
+                <p class="text-sm text-gray-600">&copy; 2026 Babel Technology Group LLC. All rights reserved. Centreville, Virginia.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
