@@ -11,62 +11,68 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
-            theme: { extend: { colors: { bastion: { 50:'#f0f5fa',100:'#dae6f2',200:'#b8d0e8',300:'#699BCF',400:'#5a89b8',500:'#4a77a1',600:'#3d6288',700:'#334f6e',800:'#2a3d55',900:'#1a2740',950:'#0d1520' }}, fontFamily: { sans:['Lato','sans-serif'], heading:['Cabin','sans-serif'] }}}
+            theme: { extend: { colors: { bastion: { 50:'#f0f5fa',100:'#dae6f2',200:'#b8d0e8',300:'#699BCF',400:'#5a89b8',500:'#4a77a1',600:'#3d6288',700:'#334f6e',800:'#2a3d55',900:'#1a2740',950:'#0d1520' }, dark: { 950:'#060c18', 900:'#0a1628' }}, fontFamily: { sans:['Lato','sans-serif'], heading:['Cabin','sans-serif'] }}}
         }
     </script>
     <script src="https://unpkg.com/lucide@latest"></script>
     <link rel="stylesheet" href="css/styles.css">
 </head>
-<body class="bg-bastion-950 text-gray-100 font-sans antialiased">
+<body class="bg-dark-950 text-gray-100 font-sans antialiased overflow-x-hidden">
+
+    <!-- Background Effects -->
+    <div class="grid-bg"></div>
+    <div class="noise-overlay"></div>
+    <div class="orb orb-1"></div>
 
     <!-- Navigation -->
-    <nav class="fixed top-0 w-full z-50 bg-bastion-950/80 backdrop-blur-lg border-b border-bastion-800/50">
+    <nav id="navbar" class="fixed top-0 w-full z-50 transition-all duration-300 border-b border-bastion-800/20" style="background: rgba(6,12,24,0.6); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px);">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-16">
-                <a href="index.html" class="flex items-center gap-3">
-                    <div class="w-8 h-8 bg-bastion-300 rounded-lg flex items-center justify-center">
+                <a href="index.html" class="flex items-center gap-3 group">
+                    <div class="w-9 h-9 bg-gradient-to-br from-bastion-300 to-bastion-500 rounded-xl flex items-center justify-center transition-transform duration-300 group-hover:scale-105">
                         <i data-lucide="shield" class="w-5 h-5 text-white"></i>
                     </div>
                     <span class="text-lg font-heading font-bold text-white">Babel Technology Group</span>
                 </a>
                 <div class="hidden md:flex items-center gap-8">
-                    <a href="index.html" class="text-sm text-gray-300 hover:text-bastion-300 transition-colors">Home</a>
-                    <a href="index.html#services" class="text-sm text-gray-300 hover:text-bastion-300 transition-colors">Services</a>
-                    <a href="bastion.html" class="text-sm text-gray-300 hover:text-bastion-300 transition-colors">Babel Bastion</a>
+                    <a href="index.html" class="text-sm text-gray-400 hover:text-bastion-300 transition-colors">Home</a>
+                    <a href="index.html#services" class="text-sm text-gray-400 hover:text-bastion-300 transition-colors">Services</a>
+                    <a href="bastion.html" class="text-sm text-gray-400 hover:text-bastion-300 transition-colors">Babel Bastion</a>
                     <a href="leadership.html" class="text-sm text-bastion-300 font-semibold">Leadership</a>
-                    <a href="index.html#contact" class="bg-bastion-300 hover:bg-bastion-400 text-white font-semibold py-2 px-4 rounded-lg text-sm transition-colors">Contact Us</a>
+                    <a href="index.html#contact" class="btn-primary text-sm !py-2 !px-5"><span>Contact Us</span></a>
                 </div>
-                <button id="mobile-menu-btn" class="md:hidden p-2 text-gray-400 hover:text-white">
+                <button id="mobile-menu-btn" class="md:hidden p-2 text-gray-400 hover:text-white transition-colors">
                     <i data-lucide="menu" class="w-6 h-6"></i>
                 </button>
             </div>
         </div>
-        <div id="mobile-menu" class="hidden md:hidden bg-bastion-900 border-t border-bastion-800">
-            <div class="px-4 py-3 space-y-2">
-                <a href="index.html" class="block py-2 text-gray-300">Home</a>
-                <a href="bastion.html" class="block py-2 text-gray-300">Babel Bastion</a>
-                <a href="leadership.html" class="block py-2 text-bastion-300 font-semibold">Leadership</a>
-                <a href="index.html#contact" class="block py-2 text-gray-300">Contact Us</a>
+        <div id="mobile-menu" class="hidden md:hidden border-t border-bastion-800/30" style="background: rgba(6,12,24,0.95); backdrop-filter: blur(16px);">
+            <div class="px-4 py-3 space-y-1">
+                <a href="index.html" class="block py-2.5 text-gray-400 hover:text-bastion-300 transition-colors">Home</a>
+                <a href="bastion.html" class="block py-2.5 text-gray-400 hover:text-bastion-300 transition-colors">Babel Bastion</a>
+                <a href="leadership.html" class="block py-2.5 text-bastion-300 font-semibold">Leadership</a>
+                <a href="index.html#contact" class="block py-2.5 text-gray-400 hover:text-bastion-300 transition-colors">Contact Us</a>
             </div>
         </div>
     </nav>
 
     <!-- Leadership Content -->
-    <section class="pt-32 pb-24">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section class="relative pt-32 pb-28">
+        <div class="orb orb-2"></div>
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
-                <h1 class="text-4xl font-heading font-bold text-white">Leadership Team</h1>
-                <p class="mt-4 text-gray-400 max-w-2xl mx-auto">
+                <h1 class="hero-title font-heading font-bold text-white reveal" style="font-size: clamp(2rem, 5vw, 3.5rem);">Leadership Team</h1>
+                <p class="mt-4 text-gray-400 max-w-2xl mx-auto reveal reveal-delay-1">
                     Led by experienced professionals with deep roots in defense technology and cybersecurity
                 </p>
             </div>
 
             <!-- Patrick Berrigan -->
-            <div class="max-w-4xl mx-auto">
-                <div class="bg-bastion-900 border border-bastion-800 rounded-2xl p-8 md:p-12">
+            <div class="max-w-4xl mx-auto reveal reveal-delay-2">
+                <div class="glass-panel p-8 md:p-12">
                     <div class="flex flex-col md:flex-row items-start gap-8">
-                        <div class="w-32 h-32 bg-bastion-800 rounded-2xl flex items-center justify-center flex-shrink-0">
-                            <i data-lucide="user" class="w-16 h-16 text-bastion-300"></i>
+                        <div class="w-32 h-32 rounded-2xl flex items-center justify-center flex-shrink-0 bg-gradient-to-br from-bastion-800/80 to-bastion-900/80 border border-bastion-700/30">
+                            <i data-lucide="user" class="w-14 h-14 text-bastion-300/60"></i>
                         </div>
                         <div>
                             <h2 class="text-2xl font-heading font-bold text-white">Patrick Berrigan</h2>
@@ -89,19 +95,21 @@
                                 without the typical six-figure consulting fees.
                             </p>
 
-                            <div class="mt-6 flex flex-wrap gap-3">
-                                <span class="bg-bastion-800 text-bastion-300 text-xs font-medium px-3 py-1 rounded-full">CMMC</span>
-                                <span class="bg-bastion-800 text-bastion-300 text-xs font-medium px-3 py-1 rounded-full">Risk Management Framework</span>
-                                <span class="bg-bastion-800 text-bastion-300 text-xs font-medium px-3 py-1 rounded-full">Cloud Architecture</span>
-                                <span class="bg-bastion-800 text-bastion-300 text-xs font-medium px-3 py-1 rounded-full">DevSecOps</span>
-                                <span class="bg-bastion-800 text-bastion-300 text-xs font-medium px-3 py-1 rounded-full">AI/ML</span>
-                                <span class="bg-bastion-800 text-bastion-300 text-xs font-medium px-3 py-1 rounded-full">System Engineering</span>
+                            <div class="mt-6 flex flex-wrap gap-2">
+                                <span class="tag">CMMC</span>
+                                <span class="tag">Risk Management Framework</span>
+                                <span class="tag">Cloud Architecture</span>
+                                <span class="tag">DevSecOps</span>
+                                <span class="tag">AI/ML</span>
+                                <span class="tag">System Engineering</span>
                             </div>
 
                             <div class="mt-6">
-                                <a href="mailto:info@babeltechnologygroup.com" class="inline-flex items-center gap-2 text-bastion-300 hover:text-bastion-200 transition-colors">
-                                    <i data-lucide="mail" class="w-4 h-4"></i>
-                                    info@babeltechnologygroup.com
+                                <a href="mailto:info@babeltechnologygroup.com" class="inline-flex items-center gap-2 text-bastion-300 hover:text-bastion-200 transition-colors group">
+                                    <div class="icon-box !w-8 !h-8 !rounded-lg">
+                                        <i data-lucide="mail" class="w-3.5 h-3.5 text-bastion-300"></i>
+                                    </div>
+                                    <span>info@babeltechnologygroup.com</span>
                                 </a>
                             </div>
                         </div>
@@ -112,9 +120,9 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-bastion-900 border-t border-bastion-800 py-8">
+    <footer class="relative border-t border-bastion-800/20 py-10">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <p class="text-sm text-gray-600">&copy; 2026 Babel Technology Group LLC. All rights reserved.</p>
+            <p class="text-sm text-gray-600">&copy; 2026 Babel Technology Group LLC. All rights reserved. Fairfax, Virginia.</p>
         </div>
     </footer>
 
